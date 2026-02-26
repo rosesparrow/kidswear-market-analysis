@@ -66,19 +66,35 @@ premium-kidswear-market-analysis/
 
 *This section will be updated as each analytical component is completed.*
 
+From competitor pricing:
+
+- UK mass market ceiling ~£28 (M&S, Next, Primark)
+- UK premium floor £89 (D&D), stops at age 10
+- ~£60 gap with no UK brand serving 11-19 at premium price point
+- US equivalent (Katie J NYC) at £62-75 GBP — validates demand exists
+
+From Google Trends:
+
+- November peak — 5x uplift vs summer trough, Christmas gifting dominates
+- girls pyjamas tracks almost identically to kids pyjamas — gender-specific search as common as generic
+- No premium brand appears in any top related queries — mass market owns search
+- luxury pyjamas near-zero — consumers don't search "luxury" to find premium
+- White Fox explosive growth from 2023 — social-first brands can scale fast
+- matching kids pjs rising — family gifting behaviour signal
+
 ---
 
 ## Notebooks
 
 ### 01 — Competitor Pricing Analysis
-Scrapes publicly available product pricing from 6 comparable brands across UK and US markets. Maps the competitive landscape by price point and product category. Identifies pricing white space in the 11–19 segment.
+Scrapes publicly available product pricing from 6 comparable brands across UK and US markets. Maps the competitive landscape using manually collected pricing data from 6 comparable brands across UK and US markets. Identifies pricing white space in the 11–19 segment.
 
 **Skills demonstrated:** web scraping, BeautifulSoup, pandas, matplotlib, data cleaning
 
 ### 02 — Google Trends Analysis
-Uses the pytrends API to analyse search volume trends for relevant terms (luxury pyjamas, teen loungewear, kids PJs gift, etc.) across UK and US markets. Identifies seasonality patterns, year-on-year demand growth, and geographic opportunity.
+Uses the pytrends API to analyse search volume trends for relevant terms (kids pyjamas, girls pyjamas, kids pjs, kids pajamas) across UK and US markets. Identifies seasonality patterns, year-on-year demand growth, and geographic opportunity.
 
-**Skills demonstrated:** API integration, time series analysis, pytrends, plotly, geographic data visualisation
+**Skills demonstrated:** API integration, time series analysis, pytrends, seaborn heatmap
 
 ### 03 — Social Media Analysis
 Collects public social metrics (follower count, estimated engagement rate, posting frequency) for comparable brands across Instagram and TikTok. Benchmarks brand performance and identifies which brands have the strongest community relative to their size.
@@ -128,8 +144,6 @@ jupyter notebook
 - Google Trends data is relative (indexed 0–100) rather than absolute search volume
 
 ---
-
-## Author
 
 Independent market analysis project. Conducted using publicly available data sources only.
 
