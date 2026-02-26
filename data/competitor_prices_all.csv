@@ -1,0 +1,27 @@
+brand,market,demographic,product,price_gbp,min_age,max_age,source
+M&S,UK,Kids/Teen,Pure Cotton Short Pyjamas (1-16 Yrs),8.0,1,16,manual
+M&S,UK,Kids/Teen,2 Pack Cotton Pyjamas (6-16 Yrs),26.0,6,16,manual
+M&S,UK,Kids/Teen,Licensed Character Pyjamas (6-16 Yrs),20.0,6,16,manual
+M&S,UK,Kids/Teen,Fleece Onesie (1-16 Yrs),22.0,1,16,manual
+M&S,UK,Kids/Teen,Dressing Gown (1-16 Yrs),28.0,1,16,manual
+Next,UK,Kids/Teen,Cotton Pyjama Set (3-16 Yrs),14.0,3,16,manual
+Next,UK,Kids/Teen,Printed Pyjama Set (3-16 Yrs),18.0,3,16,manual
+Next,UK,Kids/Teen,Satin Pyjama Set (8-16 Yrs),22.0,8,16,manual
+Next,UK,Kids/Teen,Dressing Gown (3-16 Yrs),24.0,3,16,manual
+Boden,UK,Kids,Girls Printed Pyjama Set (2-12 Yrs),36.0,2,12,manual
+Boden,UK,Kids,Girls Jersey Pyjama Set (2-12 Yrs),32.0,2,12,manual
+Boden,UK,Adult,Womens Printed Cotton Pyjama Set,75.0,18,65,manual
+Desmond & Dempsey,UK,Adult,Classic PJ Set,145.0,25,55,manual
+Desmond & Dempsey,UK,Adult,Shorts PJ Set,120.0,25,55,manual
+Desmond & Dempsey,UK,Kids,Kids PJ Set (up to age 10),89.0,2,10,manual
+White Fox,UK,Young Adult,Tracksuit Set,110.0,16,30,manual
+White Fox,UK,Young Adult,PJ Set,75.0,16,30,manual
+White Fox,UK,Young Adult,Hoodie,65.0,16,30,manual
+Roller Rabbit,US,Adult,PJ Set,101.12,25,55,manual
+Roller Rabbit,US,Kids,Kids PJ Set (up to age 12),69.52,2,12,manual
+Pink Chicken,US,Kids,Kids PJ Set (up to age 12),53.72,2,12,manual
+Pink Chicken,US,Adult,Womens PJ Set,86.9,25,55,manual
+Katie J NYC,US,Teen,PJ Set (4-16 Yrs),61.62,4,16,manual
+Katie J NYC,US,Teen,Hoodie Set (4-16 Yrs),75.05,4,16,manual
+Eberjey,US,Adult,PJ Set,130.35,25,55,manual
+Eberjey,US,Kids,Kids PJ Set (up to age 12),75.05,2,12,manual
