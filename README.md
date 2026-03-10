@@ -4,7 +4,7 @@
 
 This project presents a data-driven market entry analysis for a hypothetical direct-to-consumer premium loungewear brand targeting the 11–19 age demographic in the UK, with secondary analysis of US expansion potential.
 
-The analysis identifies a structural gap in the UK premium kidswear market: established luxury loungewear brands (e.g. Desmond & Dempsey, Roller Rabbit, Pink Chicken) are primarily adult-focused, while the 11–19 segment is underserved by brands offering genuine quality and aesthetic differentiation at a mid-luxury price point.
+The analysis identifies a structural gap in the UK premium kidswear market: established luxury loungewear brands are primarily adult-focused, while the 11–19 segment is underserved by brands offering genuine quality and aesthetic differentiation at a mid-luxury price point.
 
 All data used is publicly available. No proprietary or commercially sensitive data is included.
 
@@ -23,30 +23,41 @@ All data used is publicly available. No proprietary or commercially sensitive da
 ## Project Structure
 
 ```
+
 premium-kidswear-market-analysis/
 │
-├── README.md
+├── README.md                  # Update to describe the full flow + notebook purposes
 ├── requirements.txt
 ├── .gitignore
 │
-├── 01_competitor_analysis/
-│   ├── competitor_pricing.ipynb        # Price point scraping & positioning map
-│   └── data/
+├── 01_competitor_analysis/    # (pricing, positioning map – still to do)
+│ ├── competitor_pricing.ipynb
+│ └── data/
 │
-├── 02_search_trends/
-│   ├── google_trends.ipynb             # Demand trends, seasonality, UK vs US
-│   └── data/
+├── 02_search_trends/          # ← done, key findings below
+│ ├── google_trends.ipynb
+│ └── data/
 │
-├── 03_social_analysis/
-│   ├── social_metrics.ipynb            # Follower counts, engagement rates, posting cadence
-│   └── data/
+├── 03_social_analysis/        # ← Now complete – push with key findings export
+│ ├── social_metrics.ipynb
+│ ├── key_findings.md          # ← Or .ipynb with markdown export of the printout
+│ └── data/                    # social_media_data_collection_v7.xlsx + charts
 │
-├── 04_financial_modelling/
-│   ├── revenue_projections.ipynb       # Revenue scenarios, break-even, sensitivity analysis
-│   └── data/
+**├── 04_strategic_context/**  # ← New folder: models, adjacent brands, gap analysis**
+**│ ├── strategic_models_competitive_context.ipynb**  # ← Main notebook for models table, adjacents, positioning map, gap statement**
+**│ └── data/**                # ← Any additional CSVs, screenshots, or notes (brand websites captures)**
+**│**
+**├── 05_market_opportunity/** # ← new folder to separate pure gap/opportunity framing**
+**│ ├── market_gap_analysis.ipynb**  # ← Short notebook with the one-sentence gap + supporting evidence from 03 & 04**
+**│ └── data/**
+│
+├── 06_financial_modelling/    # ← Renumbered to reflect new flow (was 04)
+│ ├── revenue_projections.ipynb
+│ └── data/
 │
 └── reports/
-    └── summary_visualisations/         # Key charts exported for presentation use
+    └── summary_visualisations/ # Key charts from 03 + any new from 04 (e.g., positioning map)
+
 ```
 
 ---
@@ -57,7 +68,7 @@ premium-kidswear-market-analysis/
 |---|---|---|
 | Competitor pricing | Web scraping (BeautifulSoup) | Brand websites (public product pages) |
 | Search trends | API via pytrends | Google Trends |
-| Social metrics | Manual collection + Social Blade | Instagram, TikTok (public accounts) |
+| Social metrics | Manual collection + Countik| Instagram, TikTok (public accounts) |
 | Financial modelling | Scenario analysis | Industry benchmarks, Companies House filings |
 
 ---
@@ -81,6 +92,14 @@ From Google Trends:
 - luxury pyjamas near-zero — consumers don't search "luxury" to find premium
 - White Fox explosive growth from 2023 — social-first brands can scale fast
 - matching kids pjs rising — family gifting behaviour signal
+
+From Social Analysis:
+
+- Mass-market brands dominate scale: Next (3.4M IG), White Fox (4.2M combined), M&S (2.4M IG) hold 60–65% of total audience; most UK premiums stay sub-300K IG and negligible on TikTok.
+- Engagement inverts with scale: Pink Palm Puff leads at ~2.37% (highest), followed by Roller Rabbit (~1.16%); mass-market brands fall below 0.1–0.2%.
+- Carousel dominates content: 8–12 of last 12 posts for most brands (especially premiums); static images obsolete; Reels used selectively by mass-market and White Fox.
+- TikTok underutilized by UK brands: Most sub-10K–70K followers with low recent video views; only Pink Palm Puff (~967K TikTok, ~33.4K avg views/top 3) and White Fox (~1.5M TikTok) show strong presence.
+- Pink Palm Puff is the clear outlier: TikTok-dominant (59% of 1.64M combined followers), top engagement (2.37%), elite ratio (~12,291:1), all-carousel IG — benchmark for authentic, founder-led premium teen content.
 
 ---
 
@@ -138,7 +157,7 @@ jupyter notebook
 
 ## Limitations & Caveats
 
-- Social media metrics are point-in-time snapshots collected manually; they are indicative rather than longitudinal
+- Social media metrics are point-in-time snapshots collected manually
 - Web scraping reflects pricing at time of collection; fashion pricing changes seasonally
 - Financial projections are illustrative scenario models, not forecasts; assumptions are documented within the notebook
 - Google Trends data is relative (indexed 0–100) rather than absolute search volume
