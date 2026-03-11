@@ -1,3 +1,4 @@
+```
 # Key Findings – Social Media Analysis (February 2026)
 
 Data snapshot: February 2026
@@ -56,4 +57,6 @@ KEY FINDINGS — Social Media Analysis
  │ Nobody's Child      │ Adult womenswear only — not relevant                 │
  │ Ava & Bear London   │ UK premium kids sleepwear — stops at ~age 10         │
  └─────────────────────┴──────────────────────────────────────────────────────┘
+
+ ```
 =======================================================================
