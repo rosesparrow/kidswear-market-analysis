@@ -19,6 +19,18 @@ All data used is publicly available. No proprietary or commercially sensitive da
 5. What does a realistic financial model look like for a bootstrapped e-commerce brand entering this space?
 
 ---
+## Project Flow & Notebooks
+
+1. **competitor_analysis** — Pricing points, brand positioning map  
+2. **search_trends** — Demand signals via Google Trends (completed)  
+3. **social_analysis** — Instagram/TikTok metrics, engagement, content, key findings (completed)  
+4. **strategic_context** — Business/social models, adjacent brands, competitive synthesis, positioning map  
+5. **market_opportunity** — Explicit framing of the £55–85 teen premium loungewear gap  
+6. **financial_modelling** — Revenue scenarios, unit economics, TAM/SAM/SOM, projections  
+
+Progression: Raw data → Strategic interpretation → Opportunity framing → Quantification.
+
+---
 
 ## Project Structure
 
