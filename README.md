@@ -25,7 +25,7 @@ All data used is publicly available. No proprietary or commercially sensitive da
 2. **search_trends** — Demand signals via Google Trends (completed)  
 3. **social_analysis** — Instagram/TikTok metrics, engagement, content, key findings (completed)  
 4. **strategic_context** — Business/social models, adjacent brands, competitive synthesis, positioning map  
-5. **market_opportunity** — Explicit framing of the £55–85 teen premium loungewear gap  
+5. **market_opportunity** — Explicit framing of the £55–85 teen premium loungewear gap.  Market demographics.  
 6. **financial_modelling** — Revenue scenarios, unit economics, TAM/SAM/SOM, projections  
 
 Progression: Raw data → Strategic interpretation → Opportunity framing → Quantification.
@@ -61,6 +61,7 @@ premium-kidswear-market-analysis/
 **│**
 **├── 05_market_opportunity/** # ← new folder to separate pure gap/opportunity framing**
 **│ ├── market_gap_analysis.ipynb**  # ← Short notebook with the one-sentence gap + supporting evidence from 03 & 04**
+**│ ├── market_opportunity_demographics.ipynb** # Quantifies addressable market via demographics 
 **│ └── data/**
 │
 ├── 06_financial_modelling/    # ← Renumbered to reflect new flow (was 04)
@@ -113,6 +114,10 @@ From Social Analysis:
 - TikTok underutilized by UK brands: Most sub-10K–70K followers with low recent video views; only Pink Palm Puff (~967K TikTok, ~33.4K avg views/top 3) and White Fox (~1.5M TikTok) show strong presence.
 - Pink Palm Puff is the clear outlier: TikTok-dominant (59% of 1.64M combined followers), top engagement (2.37%), elite ratio (~12,291:1), all-carousel IG — benchmark for authentic, founder-led premium teen content.
 
+From Market Opportunity:
+
+- Stable demographic base = dependable demand volume ahead.
+
 ---
 
 ## Notebooks
@@ -132,7 +137,13 @@ Collects public social metrics (follower count, estimated engagement rate, posti
 
 **Skills demonstrated:** data collection, pandas, comparative analysis, seaborn visualisation
 
-### 04 — Financial Modelling
+### 04 - Strategic Context
+Business/social models, adjacent brands, competitive synthesis, positioning map 
+
+### 05 — Market Opportunity
+Market demographics
+
+### 06 — Financial Modelling
 Builds a three-scenario revenue projection model (conservative, base, optimistic) for a bootstrapped e-commerce launch. Includes break-even analysis, margin sensitivity, and CAC (customer acquisition cost) assumptions based on industry benchmarks.
 
 **Skills demonstrated:** financial modelling in Python, scenario analysis, sensitivity tables, plotly
