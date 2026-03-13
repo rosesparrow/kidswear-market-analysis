@@ -1,25 +1,26 @@
-# Kidswear Market Analysis — E-commerce Market Entry
+# Kids Sleepwear Market Analysis — E-commerce Market Entry
 
-A data-driven market entry analysis for a direct-to-consumer kidswear brand targeting the UK market, with secondary analysis of US expansion potential.
+A data-driven market entry analysis for the UK children's and teen sleepwear category, exploring whether a gap exists for a new direct-to-consumer brand.
 
-The analysis identifies a structural gap in the UK kidswear market: established brands largely stop at age 10, while the 11–19 segment is underserved by brands offering genuine quality and aesthetic differentiation at an accessible price point. All data used is publicly available. No proprietary or commercially sensitive data is included.
+The analysis uses publicly available data — competitor pricing, Google Trends, social media metrics, and ONS demographic data — to assess market structure, demand signals, and competitive dynamics. It finds a structural gap: established UK brands largely stop serving children at age 10–14, while the teen segment (11–19) is underserved by brands offering genuine quality, aesthetic differentiation, and identity at an accessible price point.
 
 ---
 
 ## Research Questions
 
-1. How large is the UK children's and teen apparel market, and what is the e-commerce growth trajectory?
-2. How are direct competitors priced, and what does the competitive landscape look like across product categories?
-3. What does consumer search behaviour reveal about demand trends, seasonality, and geographic opportunity?
-4. How do competitor brands perform on social media relative to their size, and what engagement patterns exist?
-5. What does a realistic financial model look like for a bootstrapped e-commerce brand entering this space?
+1. How are competitors priced, and what does the competitive landscape look like across the UK sleepwear market?
+2. What does consumer search behaviour reveal about demand patterns, seasonality, and category language?
+3. How do competitor brands perform on social media, and what engagement patterns exist across segments?
+4. What strategic models and business approaches do comparable brands use?
+5. How large is the addressable UK demographic, and is it growing or shrinking?
+6. What does a realistic financial model look like for a bootstrapped e-commerce brand entering this space?
 
 ---
 
 ## Project Structure
 
 ```
-kidswear-market-analysis/
+kids-sleepwear-market-analysis/
 │
 ├── README.md
 ├── requirements.txt
@@ -28,6 +29,7 @@ kidswear-market-analysis/
 ├── 01_competitor_analysis/
 │   ├── competitor_pricing.ipynb
 │   └── data/
+│       └── competitor_prices_all.csv
 │
 ├── 02_search_trends/
 │   ├── google_trends.ipynb
@@ -37,17 +39,18 @@ kidswear-market-analysis/
 │   ├── social_metrics.ipynb
 │   ├── key_findings.md
 │   └── data/
+│       └── social_media_data_collection_v8.xlsx
 │
 ├── 04_strategic_context/
-│   ├── strategic_models_competitive_context.ipynb
-│   └── data/
+│   └── strategic_models_competitive_context.ipynb
 │
 ├── 05_market_opportunity/
 │   ├── market_gap_analysis.ipynb
-│   ├── market_opportunity_demographics.ipynb
+│   ├── market_demographics.ipynb
 │   └── data/
+│       └── uk_ons_population_age.xlsx
 │
-└── 06_financial_modelling/
+└── 06_financial_modelling/                  ← coming soon
     ├── revenue_projections.ipynb
     └── data/
 ```
@@ -56,130 +59,99 @@ kidswear-market-analysis/
 
 ## Analytical Flow
 
-**Raw data → Strategic interpretation → Opportunity framing → Quantification**
+Each notebook builds on the previous, moving from raw data collection through to strategic synthesis and quantification.
 
-| # | Notebook | Purpose |
-|---|----------|---------|
-| 01 | Competitor Pricing Analysis | Pricing points and brand positioning map across UK and US markets |
-| 02 | Google Trends Analysis | Demand signals, seasonality, and geographic opportunity via pytrends API |
-| 03 | Social Media Analysis | Instagram/TikTok metrics, engagement benchmarking, content analysis |
-| 04 | Strategic Context | Competitive synthesis, business model comparison, positioning map |
-| 05 | Market Opportunity | Market sizing, demographic analysis, gap quantification |
-| 06 | Financial Modelling | Revenue scenarios, unit economics, break-even analysis |
+| # | Notebook | What it does |
+|---|----------|-------------|
+| 01 | Competitor Pricing | Maps pricing and brand positioning across UK and US markets; identifies price tiers and white space |
+| 02 | Google Trends | Analyses search demand via the pytrends API — seasonality, term selection, geographic comparison |
+| 03 | Social Media Analysis | Benchmarks 21 brands across Instagram and TikTok on follower scale, engagement, and content strategy |
+| 04 | Strategic Context | Synthesises business models across the competitor set; produces a competitive positioning map |
+| 05 | Market Opportunity | Quantifies the addressable demographic using ONS data and a cohort-component forecast; frames the gap with evidence from notebooks 01–04 |
+| 06 | Financial Modelling | Revenue scenarios, unit economics, and break-even analysis for a bootstrapped DTC launch *(coming soon)* |
 
 ---
 
 ## Key Findings
 
-### Competitor Pricing
-- UK mass market ceiling ~£28 (M&S, Next, Primark)
-- UK premium brands stop at age 10 — no established brand serves the 11–19 segment at a premium price point
-- US equivalent (Katie J NYC) pricing at £62–75 GBP — validates that demand exists at this price point
+### Competitor Pricing (Notebook 01)
+- The UK mass-market cluster sits between £6–28 (SHEIN, George, Primark, H&M, Matalan, M&S, Next)
+- Premium kids brands (Boden, Desmond & Dempsey) stop at age 10–12 — none targets the teen segment with a distinct identity
+- US comparables (Katie J NYC, Pink Chicken) price at £54–75 GBP, validating demand at a higher price point than any UK brand currently occupies for teens
 
-### Google Trends
-- November peak: 5x uplift vs summer trough — Christmas gifting dominates demand
-- `girls pyjamas` tracks almost identically to `kids pyjamas` — gender-specific search as common as generic
-- No premium brand appears in any top related queries — mass market owns search entirely
-- `luxury pyjamas` near-zero — consumers do not search "luxury" to find premium products
-- White Fox explosive growth from 2023 — social-first brands can scale fast in this category
-- `matching kids pjs` rising — family gifting behaviour signal
+### Search Trends (Notebook 02)
+- November drives a ~5x uplift in search interest vs summer — Christmas gifting dominates the category
+- `girls pyjamas` tracks almost identically to `kids pyjamas` — gender-specific search is as common as generic
+- No premium brand appears in any top related queries — mass-market retailers (Next, Primark, M&S) own search entirely
+- `luxury pyjamas` returns near-zero volume — consumers do not use "luxury" as search language in this category
+- Implication: a new premium entrant needs a social-first discovery strategy, not an SEO-first one
 
-### Social Media Analysis
-- Mass-market brands dominate scale: Next (3.4M IG), White Fox (4.2M combined), M&S (2.4M IG) hold 60–65% of total audience; most UK premium brands stay sub-300K IG with negligible TikTok presence
-- Engagement inverts with scale: Pink Palm Puff leads at ~2.37%, followed by Roller Rabbit (~1.16%); mass-market brands fall below 0.1–0.2%
-- Carousel dominates content: 8–12 of last 12 posts for most premium brands; static images largely obsolete
-- TikTok underutilised by UK brands: most sub-10K–70K followers; only Pink Palm Puff (~967K TikTok) and White Fox (~1.5M TikTok) show meaningful presence
-- Pink Palm Puff is the clear benchmark: TikTok-dominant (59% of 1.64M combined followers), top engagement (2.37%), elite follower-to-following ratio (~12,291:1) — the model for authentic, founder-led premium teen content
+### Social Media (Notebook 03)
+- Mass-market brands dominate scale (Next 3.4M IG, M&S 2.4M IG), but engagement rates are lowest in the dataset (<0.1%)
+- Engagement inverts with scale: Pink Palm Puff leads at ~2.37%, Roller Rabbit at ~1.16% — smaller identity-led brands generate disproportionate interaction
+- Carousel is the dominant content format across premium brands (8–12 of last 12 posts); static images are largely obsolete
+- TikTok is underutilised by UK premium brands — most sit below 10K–70K followers
+- Pink Palm Puff is the standout benchmark: TikTok-dominant (59% of 1.64M combined followers), founder-led, all-carousel IG, highest engagement in the dataset
 
-### Market Opportunity
-- Stable 11–19 demographic base provides dependable demand volume
-- Full sizing and quantification in `05_market_opportunity`
-
----
-
-## Notebook Detail
-
-### 01 — Competitor Pricing Analysis
-Scrapes publicly available product pricing from comparable brands across UK and US markets. Maps the competitive landscape and identifies pricing white space in the 11–19 segment.
-
-**Skills demonstrated:** web scraping, BeautifulSoup, pandas, matplotlib, data cleaning
-
-### 02 — Google Trends Analysis
-Uses the pytrends API to analyse search volume trends for relevant terms (`kids pyjamas`, `girls pyjamas`, `kids pjs`, `kids pajamas`) across UK and US markets. Identifies seasonality patterns, year-on-year demand growth, and geographic opportunity.
-
-**Skills demonstrated:** API integration, time series analysis, pytrends, seaborn heatmap
-
-### 03 — Social Media Analysis
-Collects public social metrics (follower count, engagement rate, posting frequency) for comparable brands across Instagram and TikTok. Benchmarks brand performance and identifies which brands have the strongest community relative to their size.
-
-**Skills demonstrated:** data collection, pandas, comparative analysis, seaborn visualisation
-
-### 04 — Strategic Context
-Maps business and social models across adjacent brands. Synthesises competitive dynamics and produces a positioning map of the market landscape.
-
-**Skills demonstrated:** competitive analysis, strategic frameworks, data visualisation
-
-### 05 — Market Opportunity
-Quantifies the addressable market using UK demographic data. Frames the market gap with supporting evidence from notebooks 02–04.
-
-**Skills demonstrated:** market sizing (TAM/SAM/SOM), demographic analysis, opportunity framing
-
-### 06 — Financial Modelling
-Builds a three-scenario revenue projection model (conservative, base, optimistic) for a bootstrapped e-commerce launch. Includes break-even analysis, margin sensitivity, and CAC assumptions based on industry benchmarks.
-
-**Skills demonstrated:** financial modelling in Python, scenario analysis, sensitivity tables, plotly
+### Market Opportunity (Notebook 05)
+- The UK 11–19 population is ~7.5 million (mid-2025 base forecast from ONS data)
+- The 5–19 pipeline remains stable to slightly growing through 2035, with reliable cohort replenishment
+- Full demographic analysis, cohort-component forecast model, and gap sizing in the notebook
 
 ---
 
 ## Methodology & Data Sources
 
-| Component | Method | Data Source |
-|-----------|--------|-------------|
-| Competitor pricing | Web scraping (BeautifulSoup) | Brand websites (public product pages) |
-| Search trends | API via pytrends | Google Trends |
+| Component | Method | Source |
+|-----------|--------|--------|
+| Competitor pricing | Web scraping (BeautifulSoup) + manual collection | Brand websites (public product pages) |
+| Search trends | pytrends API | Google Trends |
 | Social metrics | Manual collection + Countik | Instagram, TikTok (public accounts) |
-| Financial modelling | Scenario analysis | Industry benchmarks, Companies House filings |
+| Demographics | ONS mid-year population estimates (2011–2024) | Office for National Statistics |
+| Financial modelling | Scenario analysis | Industry benchmarks *(coming soon)* |
 
 ---
 
 ## Tech Stack
 
-- Python 3.11
+- Python 3.11+
 - Jupyter Notebooks
-- pandas, numpy
-- matplotlib, seaborn, plotly
-- BeautifulSoup4, requests
+- pandas · numpy
+- matplotlib · seaborn · plotly
+- BeautifulSoup4 · requests
 - pytrends
 - scipy
+- openpyxl
 
 ---
 
-## Setup & Installation
+## Setup
 
 ```bash
-# Clone the repository
-git clone https://github.com/rosesparrow/kidswear-market-analysis.git
-cd kidswear-market-analysis
-
-# Install dependencies
+git clone https://github.com/rosesparrow/kids-sleepwear-market-analysis.git
+cd kids-sleepwear-market-analysis
 pip install -r requirements.txt
-
-# Launch Jupyter
 jupyter notebook
 ```
 
 ---
 
-## Limitations & Caveats
+## Limitations
 
-- Social media metrics are point-in-time snapshots collected manually; engagement rates will shift over time
+- Social media metrics are point-in-time snapshots (Feb/Mar 2026); engagement rates shift over time
 - Web scraping reflects pricing at time of collection; fashion pricing changes seasonally
-- Financial projections are illustrative scenario models, not forecasts; all assumptions are documented within the notebook
-- Google Trends data is relative (indexed 0–100) rather than absolute search volume
-- Social engagement metrics are directional proxies; correlation with commercial outcomes is not established
+- Google Trends data is relative (indexed 0–100), not absolute search volume
+- Financial projections are illustrative scenario models, not forecasts — all assumptions are documented within the notebook
+- Competitor pricing uses a representative sample per brand; full range audits are noted as a future enhancement
 
 ---
 
-*Independent market analysis project. Conducted using publicly available data sources only.*
+## Skills Demonstrated
 
-*Project status: In progress — last updated March 2026*
+Data collection and web scraping · API integration (pytrends, Google Trends) · Data cleaning and transformation (pandas) · Exploratory data analysis · Data visualisation (matplotlib, seaborn, plotly) · Time series analysis · Market sizing and demographic analysis (ONS data) · Cohort-component population forecasting · Competitive benchmarking · Financial modelling and scenario analysis · Strategic synthesis and opportunity framing
+
+---
+
+*Independent market analysis project. All data is publicly available.*
+*Project status: In progress — financial modelling section forthcoming*
+*Last updated: March 2026*
