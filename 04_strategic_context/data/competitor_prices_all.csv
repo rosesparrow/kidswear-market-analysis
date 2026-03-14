@@ -2,29 +2,41 @@ brand,market,demographic,product,price_gbp,min_age,max_age,source
 M&S,UK,Kids/Teen,Pure Cotton Short Pyjamas (1-16 Yrs),8,1,16,manual
 M&S,UK,Kids/Teen,2 Pack Cotton Pyjamas (6-16 Yrs),26,6,16,manual
 M&S,UK,Kids/Teen,Licensed Character Pyjamas (6-16 Yrs),20,6,16,manual
-M&S,UK,Kids/Teen,Fleece Onesie (1-16 Yrs),22,1,16,manual
+M&S,UK,Kids/Teen,PJ Shorts Set,18,6,16,manual
 M&S,UK,Kids/Teen,Dressing Gown (1-16 Yrs),28,1,16,manual
-Next,UK,Kids/Teen,Cotton Pyjama Set (3-16 Yrs),14,3,16,manual
-Next,UK,Kids/Teen,Printed Pyjama Set (3-16 Yrs),18,3,16,manual
-Next,UK,Kids/Teen,Satin Pyjama Set (8-16 Yrs),22,8,16,manual
+Next,UK,Kids/Teen,Fleece Pyjama Set (3-16 Yrs),24,3,16,manual
+Next,UK,Kids/Teen,3-Pack Printed Pyjama Set (3-16 Yrs),33,3,16,manual
+Next,UK,Kids/Teen,Satin Short Pyjama Set (5-16 Yrs),27,5,16,manual
+Next,UK,Kids/Teen,Satin PJ Set,32,5,16,manual
 Next,UK,Kids/Teen,Dressing Gown (3-16 Yrs),24,3,16,manual
-Boden,UK,Kids,Girls Printed Pyjama Set (2-12 Yrs),36,2,12,manual
-Boden,UK,Kids,Girls Jersey Pyjama Set (2-12 Yrs),32,2,12,manual
-Boden,UK,Adult,Womens Printed Cotton Pyjama Set,75,18,65,manual
-Desmond & Dempsey,UK,Adult,Classic PJ Set,145,25,55,manual
-Desmond & Dempsey,UK,Adult,Shorts PJ Set,120,25,55,manual
-Desmond & Dempsey,UK,Kids,Kids PJ Set (up to age 10),89,2,10,manual
-White Fox,UK,Young Adult,Tracksuit Set,110,16,30,manual
-White Fox,UK,Young Adult,PJ Set,75,16,30,manual
-White Fox,UK,Young Adult,Hoodie,65,16,30,manual
-Roller Rabbit,US,Adult,PJ Set,101.12,25,55,manual
-Roller Rabbit,US,Kids,Kids PJ Set (up to age 12),69.52,2,12,manual
-Pink Chicken,US,Kids,Kids PJ Set (up to age 12),53.72,2,12,manual
-Pink Chicken,US,Adult,Womens PJ Set,86.9,25,55,manual
-Katie J NYC,US,Teen,PJ Set (4-16 Yrs),61.62,4,16,manual
+Boden,UK,Kids,Girls Printed Pyjama Set (2-14 Yrs),29,2,14,manual
+Boden,UK,Kids,Girls Jersey Pyjama Set (2-14 Yrs),27,2,14,manual
+Desmond & Dempsey,UK,Adult,Classic PJ Set,170,25,55,manual
+Desmond & Dempsey,UK,Adult,Shorts PJ Set,135,25,55,manual
+Desmond & Dempsey,UK,Kids,Kids PJ Set (up to age 10),45,2,11,manual
+White Fox,UK,Young Adult,PJ Set,50,16,30,manual
+White Fox,UK,Young Adult,PJ Set Shorts,40,16,30,manual
+White Fox,UK,Young Adult,PJ Set Long Sleeve,60,16,30,manual
+White Fox,UK,Young Adult,PJ Top,20,16,30,manual
+White Fox,UK,Young Adult,PJ Bottoms,35,16,30,manual
+Roller Rabbit,US,Adult,Womens PJ Set,180,25,55,manual
+Roller Rabbit,US,Adult,Womens Long Sleeve PJ Set,133,25,55,manual
+Roller Rabbit,US,Adult,Womens Shorts PJ Set,109,25,55,manual
+Roller Rabbit,US,Adult,Womens PJ Bottoms,85,25,55,manual
+Roller Rabbit,US,Kids,Kids PJ Set (up to age 12),54,2,14,manual
+Pink Chicken,US,Kids,Kids Bamboo PJ Set (up to age 14),44,2,14,manual
+Pink Chicken,US,Kids,Kids Bamboo PJ Set (up to age 14),50,2,14,manual
+Pink Chicken,US,Adult,Womens PJ Set,93,25,55,manual
+Pink Chicken,US,Adult,Womens Shorts PJ Set,77,25,55,manual
+Katie J NYC,US,Teen,PJ Set Shorts (4-16 Yrs),54,4,16,manual
 Katie J NYC,US,Teen,Hoodie Set (4-16 Yrs),75.05,4,16,manual
-Eberjey,US,Adult,PJ Set,130.35,25,55,manual
-Eberjey,US,Kids,Kids PJ Set (up to age 12),75.05,2,12,manual
+Katie J NYC,US,Teen,PJ Lounge Set,57,4,16,manual
+Katie J NYC,US,Teen,Satin Shorts PJ Set ,73,4,16,manual
+Eberjey,US,Kids,Tencel Short PJ Set,57,2,10,manual
+Eberjey,US,Adult,Short Sleeve PJ Set,156,25,55,manual
+Eberjey,US,Adult,Silk Shorts PJ Set,180,25,55,manual
+Eberjey,US,Adult,Tencel Modal PJ Set,124,25,55,manual
+Eberjey,US,Kids,Kids PJ Set (up to age 12),57,2,10,manual
 Primark,UK,Kids,Licensed Character Pyjamas (5-15 Yrs),12,5,15,manual
 Primark,UK,Kids,Graphic Short Pyjamas Set,8,7,15,manual
 Primark,UK,Kids,2pk Licensed PJ short set,13,5,15,manual
@@ -60,3 +72,4 @@ Lounge,UK,Adult,PJ Bottoms,40,20,55,manual
 Lounge,UK,Adult,PJ Top,40,20,55,manual
 Brandy Melville,UK,Young Adult,PJ Bottoms,30,14,30,manual
 Brandy Melville,UK,Young Adult,PJ Shorts,18,14,30,manual
+Pink Palm Puff,US,Young Adult,PJ Shorts Set,70,8,20,manual
